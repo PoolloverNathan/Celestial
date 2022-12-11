@@ -30,8 +30,7 @@ jobs:
         distribution: 'temurin'
     - name: Build with Gradle
       run: |
-        chmod +x gradlew
-        ./gradlew build
+        gradle build
     - uses: actions/upload-artifact@v3.1.1
       with:
         path: build
